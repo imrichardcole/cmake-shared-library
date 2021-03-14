@@ -2,9 +2,9 @@ language: cpp
 compiler: gcc
 
 before_script:
-  - cmake --version
-  - mkdir build
-  - cmake -S . -B build
+  - mkdir -p build
+  - cd build
+  - cmake ..
 
 script:
-  - cmake --build build
+  - cmake --build .
